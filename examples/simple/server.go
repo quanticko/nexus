@@ -9,7 +9,7 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/gammazero/nexus/router"
+	"github.com/quanticko/nexus/router"
 	"github.com/quanticko/nexus/wamp"
 )
 

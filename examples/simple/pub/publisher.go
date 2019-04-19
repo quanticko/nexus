@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/gammazero/nexus/client"
+	"github.com/quanticko/nexus/client"
 	"github.com/quanticko/nexus/wamp"
 )
 

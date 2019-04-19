@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	"github.com/fortytw2/leaktest"
-	"github.com/gammazero/nexus/transport"
-	"github.com/gammazero/nexus/transport/serialize"
+	"github.com/quanticko/nexus/transport"
+	"github.com/quanticko/nexus/transport/serialize"
 	"github.com/quanticko/nexus/wamp"
 )
 

@@ -22,7 +22,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/gammazero/nexus/examples/newclient"
+	"github.com/quanticko/nexus/examples/newclient"
 	"github.com/quanticko/nexus/wamp"
 )
 

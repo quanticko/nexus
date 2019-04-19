@@ -14,7 +14,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gammazero/nexus/stdlog"
+	"github.com/quanticko/nexus/stdlog"
 	"github.com/quanticko/nexus/wamp"
 )
 

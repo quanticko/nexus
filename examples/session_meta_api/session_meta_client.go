@@ -7,8 +7,8 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/gammazero/nexus/client"
-	"github.com/gammazero/nexus/examples/newclient"
+	"github.com/quanticko/nexus/client"
+	"github.com/quanticko/nexus/examples/newclient"
 	"github.com/quanticko/nexus/wamp"
 )
 

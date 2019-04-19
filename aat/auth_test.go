@@ -12,9 +12,9 @@ import (
 	"time"
 
 	"github.com/fortytw2/leaktest"
-	"github.com/gammazero/nexus/client"
+	"github.com/quanticko/nexus/client"
 	"github.com/quanticko/nexus/wamp"
-	"github.com/gammazero/nexus/wamp/crsign"
+	"github.com/quanticko/nexus/wamp/crsign"
 	"golang.org/x/crypto/pbkdf2"
 )
 

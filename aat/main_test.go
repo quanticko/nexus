@@ -14,11 +14,11 @@ import (
 	"time"
 
 	"github.com/fortytw2/leaktest"
-	"github.com/gammazero/nexus/client"
-	"github.com/gammazero/nexus/router"
-	"github.com/gammazero/nexus/router/auth"
-	"github.com/gammazero/nexus/stdlog"
-	"github.com/gammazero/nexus/transport/serialize"
+	"github.com/quanticko/nexus/client"
+	"github.com/quanticko/nexus/router"
+	"github.com/quanticko/nexus/router/auth"
+	"github.com/quanticko/nexus/stdlog"
+	"github.com/quanticko/nexus/transport/serialize"
 	"github.com/quanticko/nexus/wamp"
 )
 

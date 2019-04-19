@@ -9,8 +9,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/gammazero/nexus/stdlog"
-	"github.com/gammazero/nexus/transport/serialize"
+	"github.com/quanticko/nexus/stdlog"
+	"github.com/quanticko/nexus/transport/serialize"
 	"github.com/quanticko/nexus/wamp"
 )
 

@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/gammazero/nexus/router"
+	"github.com/quanticko/nexus/router"
 )
 
 type Config struct {
@@ -48,7 +48,7 @@ type Config struct {
 	// File to write log data to.  If not specified, log to stdout.
 	LogPath string `json:"log_path"`
 	// Router configuration parameters.
-	// See https://godoc.org/github.com/gammazero/nexus#RouterConfig
+	// See https://godoc.org/github.com/quanticko/nexus#RouterConfig
 	Router router.Config
 }
 

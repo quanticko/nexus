@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gammazero/nexus/transport"
+	"github.com/quanticko/nexus/transport"
 	"github.com/quanticko/nexus/wamp"
 )
 

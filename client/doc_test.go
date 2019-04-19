@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/gammazero/nexus/router"
+	"github.com/quanticko/nexus/router"
 	"github.com/quanticko/nexus/wamp"
 )
 

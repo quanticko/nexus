@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/fortytw2/leaktest"
-	"github.com/gammazero/nexus/stdlog"
-	"github.com/gammazero/nexus/transport"
+	"github.com/quanticko/nexus/stdlog"
+	"github.com/quanticko/nexus/transport"
 	"github.com/quanticko/nexus/wamp"
 )
 

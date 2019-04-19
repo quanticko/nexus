@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/quanticko/nexus/wamp"
-	"github.com/gammazero/nexus/wamp/crsign"
+	"github.com/quanticko/nexus/wamp/crsign"
 )
 
 // CRAuthenticator is a challenge-response authenticator.

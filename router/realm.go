@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/gammazero/nexus/router/auth"
-	"github.com/gammazero/nexus/stdlog"
-	"github.com/gammazero/nexus/transport"
+	"github.com/quanticko/nexus/router/auth"
+	"github.com/quanticko/nexus/stdlog"
+	"github.com/quanticko/nexus/transport"
 	"github.com/quanticko/nexus/wamp"
 )
 
