@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	linkedPeersOutQueueSize = 16
+	linkedPeersOutQueueSize = 128
 	// Time to wait to write message to send channel when send channel is
 	// blocked due to a burst of messages.
 	sendTimeout = time.Second
@@ -27,7 +27,7 @@ func LinkedPeers() (wamp.Peer, wamp.Peer) {
 	// The router will read from this channen and immediately dispatch the
 	// message to the broker or dealer.  Therefore this channel can be
 	// unbuffered.
-	cToR := make(chan wamp.Message)
+	cToR := make(chan wamp.Message, linkedPeersOutQueueSize)
 
 	// router reads from and writes to client
 	r := &localPeer{rd: cToR, wr: rToC}
@@ -55,6 +55,9 @@ func (p *localPeer) Recv() <-chan wamp.Message { return p.rd }
 
 // TrySend writes a message to the peer's outbound message channel.
 func (p *localPeer) TrySend(msg wamp.Message) error {
+	if len(p.wr) > (outQueueSize - 2) {
+		return errors.New("<Dropped>")
+	}
 	select {
 	case p.wr <- msg:
 		return nil
@@ -73,8 +76,7 @@ func (p *localPeer) TrySend(msg wamp.Message) error {
 // Typically called by clients, since it is OK for the router to block a client
 // since this will not block other clients.
 func (p *localPeer) Send(msg wamp.Message) error {
-	p.wr <- msg
-	return nil
+	return p.TrySend(msg)
 }
 
 // Close closes the outgoing channel, waking any readers waiting on data from

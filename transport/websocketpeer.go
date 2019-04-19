@@ -63,7 +63,7 @@ const (
 	msgpackWebsocketProtocol = "wamp.2.msgpack"
 	cborWebsocketProtocol    = "wamp.2.cbor"
 
-	outQueueSize = 16
+	outQueueSize = 128
 	ctrlTimeout  = 5 * time.Second
 )
 
@@ -167,6 +167,9 @@ func NewWebsocketPeer(conn *websocket.Conn, serializer serialize.Serializer, pay
 func (w *websocketPeer) Recv() <-chan wamp.Message { return w.rd }
 
 func (w *websocketPeer) TrySend(msg wamp.Message) error {
+	if len(w.wr) > (outQueueSize - 2) {
+		return errors.New("<Dropped WS>")
+	}
 	select {
 	case w.wr <- msg:
 		return nil
@@ -182,8 +185,7 @@ func (w *websocketPeer) TrySend(msg wamp.Message) error {
 }
 
 func (w *websocketPeer) Send(msg wamp.Message) error {
-	w.wr <- msg
-	return nil
+	return w.TrySend(msg)
 }
 
 // Close closes the websocket peer.  This closes the local send channel, and
