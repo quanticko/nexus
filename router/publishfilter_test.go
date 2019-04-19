@@ -3,7 +3,7 @@ package router
 import (
 	"testing"
 
-	"github.com/gammazero/nexus/wamp"
+	"github.com/quanticko/nexus/wamp"
 )
 
 func TestFilterBlacklist(t *testing.T) {

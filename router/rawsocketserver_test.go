@@ -6,7 +6,7 @@ import (
 	"github.com/fortytw2/leaktest"
 	"github.com/gammazero/nexus/transport"
 	"github.com/gammazero/nexus/transport/serialize"
-	"github.com/gammazero/nexus/wamp"
+	"github.com/quanticko/nexus/wamp"
 )
 
 const tcpAddr = "127.0.0.1:8181"

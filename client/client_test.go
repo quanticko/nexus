@@ -15,7 +15,7 @@ import (
 	"github.com/gammazero/nexus/router/auth"
 	"github.com/gammazero/nexus/stdlog"
 	"github.com/gammazero/nexus/transport"
-	"github.com/gammazero/nexus/wamp"
+	"github.com/quanticko/nexus/wamp"
 	"github.com/gammazero/nexus/wamp/crsign"
 )
 

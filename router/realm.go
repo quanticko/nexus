@@ -8,7 +8,7 @@ import (
 	"github.com/gammazero/nexus/router/auth"
 	"github.com/gammazero/nexus/stdlog"
 	"github.com/gammazero/nexus/transport"
-	"github.com/gammazero/nexus/wamp"
+	"github.com/quanticko/nexus/wamp"
 )
 
 // RealmConfig configures a single realm in the router.  The router

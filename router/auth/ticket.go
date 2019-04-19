@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/gammazero/nexus/wamp"
+	"github.com/quanticko/nexus/wamp"
 )
 
 // ticketAuthenticator implements CRAuthenticator

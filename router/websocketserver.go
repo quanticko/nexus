@@ -17,7 +17,7 @@ import (
 	"github.com/gammazero/nexus/stdlog"
 	"github.com/gammazero/nexus/transport"
 	"github.com/gammazero/nexus/transport/serialize"
-	"github.com/gammazero/nexus/wamp"
+	"github.com/quanticko/nexus/wamp"
 	"github.com/gorilla/websocket"
 )
 

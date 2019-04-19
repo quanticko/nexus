@@ -13,7 +13,7 @@ import (
 
 	"github.com/fortytw2/leaktest"
 	"github.com/gammazero/nexus/client"
-	"github.com/gammazero/nexus/wamp"
+	"github.com/quanticko/nexus/wamp"
 	"github.com/gammazero/nexus/wamp/crsign"
 	"golang.org/x/crypto/pbkdf2"
 )

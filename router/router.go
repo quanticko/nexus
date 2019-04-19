@@ -15,7 +15,7 @@ import (
 	"time"
 
 	"github.com/gammazero/nexus/stdlog"
-	"github.com/gammazero/nexus/wamp"
+	"github.com/quanticko/nexus/wamp"
 )
 
 const helloTimeout = 5 * time.Second

@@ -1,7 +1,7 @@
 package auth
 
 import (
-	"github.com/gammazero/nexus/wamp"
+	"github.com/quanticko/nexus/wamp"
 )
 
 // AnonymousAuth implements Authenticator interface.

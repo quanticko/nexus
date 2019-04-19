@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/gammazero/nexus/examples/newclient"
-	"github.com/gammazero/nexus/wamp"
+	"github.com/quanticko/nexus/wamp"
 )
 
 const exampleTopic = "example.hello"

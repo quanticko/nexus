@@ -8,7 +8,7 @@ import (
 	"strings"
 
 	"github.com/gammazero/nexus/transport"
-	"github.com/gammazero/nexus/wamp"
+	"github.com/quanticko/nexus/wamp"
 )
 
 // ConnectNet creates a new client connected a WAMP router over a websocket,

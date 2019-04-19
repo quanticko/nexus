@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/gammazero/nexus/stdlog"
-	"github.com/gammazero/nexus/wamp"
+	"github.com/quanticko/nexus/wamp"
 )
 
 const (
